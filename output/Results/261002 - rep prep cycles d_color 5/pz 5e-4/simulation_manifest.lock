@@ -1,0 +1,50 @@
+{
+ "version": "1",
+ "environment": {
+  "code_commit": "1bba936",
+  "code_dirty": null,
+  "python": "unknown",
+  "packages": {
+   "stim": "1.16.0",
+   "sinter": "1.16.0",
+   "tesseract-decoder": "0.1.1.dev20260822020007",
+   "stimbposd": "0.2.0",
+   "ldpc": "unknown (unpinned)",
+   "frontier": null
+  },
+  "lock_param_provenance": "reconstructed 2026-11-13 from git: 1bba936 (HEAD, input uncommitted); ray run; reproducibility: rebuilt at that commit, fingerprints equal to today's"
+ },
+ "points": [
+  {
+   "parameters": {
+    "d": 13,
+    "code_type": "IStateCnot",
+    "d_color": 5,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 4,
+    "dstl_Zflag_selec": true,
+    "pz": 0.0005,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:20580bdad10e6169e85106d0f5a1fa0409e0d6c58e41636b04bb33557afd45af",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 69,
+    "num_observables": 10,
+    "num_errors": 233,
+    "watched_detectors": 9,
+    "num_checks": 9,
+    "magic_index": 9,
+    "counts_schema": "cnot"
+   }
+  }
+ ]
+}

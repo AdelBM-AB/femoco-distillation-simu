@@ -1,0 +1,484 @@
+{
+ "version": "1",
+ "environment": {
+  "code_commit": "91ef16f",
+  "code_dirty": null,
+  "python": "unknown",
+  "packages": {
+   "stim": "1.16.0",
+   "sinter": "1.16.0",
+   "tesseract-decoder": "0.1.1.dev20260822020007",
+   "stimbposd": "0.2.0",
+   "ldpc": "unknown (unpinned)",
+   "frontier": null
+  },
+  "lock_param_provenance": "reconstructed 2026-11-13 from git: 91ef16f (exact; k=9 top-up HEAD 1874825); ray run; reproducibility: rebuilt at that commit, fingerprints equal to today's"
+ },
+ "points": [
+  {
+   "parameters": {
+    "d": 9,
+    "code_type": "IStateCnot",
+    "d_color": 3,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 1,
+    "dstl_Zflag_selec": true,
+    "pz": 0.0005,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:76e3f5f00373a16aa39c78a84829274f47483b8899dcb12d65fbbe057635407f",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 19,
+    "num_observables": 4,
+    "num_errors": 61,
+    "watched_detectors": 3,
+    "num_checks": 3,
+    "magic_index": 3,
+    "counts_schema": "cnot"
+   }
+  },
+  {
+   "parameters": {
+    "d": 9,
+    "code_type": "IStateCnot",
+    "d_color": 3,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 2,
+    "dstl_Zflag_selec": true,
+    "pz": 0.0005,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:98532e1720f0cc8c838579d8e901f5717c861136495fa6552197827870c545f1",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 27,
+    "num_observables": 4,
+    "num_errors": 85,
+    "watched_detectors": 3,
+    "num_checks": 3,
+    "magic_index": 3,
+    "counts_schema": "cnot"
+   }
+  },
+  {
+   "parameters": {
+    "d": 9,
+    "code_type": "IStateCnot",
+    "d_color": 3,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 9,
+    "dstl_Zflag_selec": true,
+    "pz": 0.0005,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:511ebeca8696d13680cbc9fa6a3404a05c0b584c8baf51d28f2f4a13e24967cf",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 83,
+    "num_observables": 4,
+    "num_errors": 253,
+    "watched_detectors": 3,
+    "num_checks": 3,
+    "magic_index": 3,
+    "counts_schema": "cnot"
+   }
+  },
+  {
+   "parameters": {
+    "d": 9,
+    "code_type": "IStateCnot",
+    "d_color": 3,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 1,
+    "dstl_Zflag_selec": true,
+    "pz": 0.001,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:3917a71440174ba782a7c8b44982aea142cfa7801639c7251ea59a1f5cf9c30c",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 19,
+    "num_observables": 4,
+    "num_errors": 61,
+    "watched_detectors": 3,
+    "num_checks": 3,
+    "magic_index": 3,
+    "counts_schema": "cnot"
+   }
+  },
+  {
+   "parameters": {
+    "d": 9,
+    "code_type": "IStateCnot",
+    "d_color": 3,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 2,
+    "dstl_Zflag_selec": true,
+    "pz": 0.001,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:5ed9549f5103d2f824ba5f4aa653758b8417e173827d4490f526544e3b0a357c",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 27,
+    "num_observables": 4,
+    "num_errors": 85,
+    "watched_detectors": 3,
+    "num_checks": 3,
+    "magic_index": 3,
+    "counts_schema": "cnot"
+   }
+  },
+  {
+   "parameters": {
+    "d": 9,
+    "code_type": "IStateCnot",
+    "d_color": 3,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 9,
+    "dstl_Zflag_selec": true,
+    "pz": 0.001,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:4c28952f8b4f2900d39fb18bc52be3c3fd97d7d885416c77e42c4b8d8d6cd117",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 83,
+    "num_observables": 4,
+    "num_errors": 253,
+    "watched_detectors": 3,
+    "num_checks": 3,
+    "magic_index": 3,
+    "counts_schema": "cnot"
+   }
+  },
+  {
+   "parameters": {
+    "d": 9,
+    "code_type": "IStateCnot",
+    "d_color": 3,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 1,
+    "dstl_Zflag_selec": true,
+    "pz": 0.0025,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:1ada569eefdc818af14e171a98c6466ce1fe6799ac34828b180ad76cc02c02a4",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 19,
+    "num_observables": 4,
+    "num_errors": 61,
+    "watched_detectors": 3,
+    "num_checks": 3,
+    "magic_index": 3,
+    "counts_schema": "cnot"
+   }
+  },
+  {
+   "parameters": {
+    "d": 9,
+    "code_type": "IStateCnot",
+    "d_color": 3,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 2,
+    "dstl_Zflag_selec": true,
+    "pz": 0.0025,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:f42b71b3ea504e5d2d0690754b2caa51acfa3ab47504eaeb350d8ff87766087e",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 27,
+    "num_observables": 4,
+    "num_errors": 85,
+    "watched_detectors": 3,
+    "num_checks": 3,
+    "magic_index": 3,
+    "counts_schema": "cnot"
+   }
+  },
+  {
+   "parameters": {
+    "d": 9,
+    "code_type": "IStateCnot",
+    "d_color": 3,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 9,
+    "dstl_Zflag_selec": true,
+    "pz": 0.0025,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:a29348254f40457699b6704722df601a26f7a5ff87b1a31d8b2513cc0b71a53a",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 83,
+    "num_observables": 4,
+    "num_errors": 253,
+    "watched_detectors": 3,
+    "num_checks": 3,
+    "magic_index": 3,
+    "counts_schema": "cnot"
+   }
+  },
+  {
+   "parameters": {
+    "d": 9,
+    "code_type": "IStateCnot",
+    "d_color": 3,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 1,
+    "dstl_Zflag_selec": true,
+    "pz": 0.005,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:cb472e527466a597e2772b34107060bc03245002bd110802db788db6727eb8ad",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 19,
+    "num_observables": 4,
+    "num_errors": 61,
+    "watched_detectors": 3,
+    "num_checks": 3,
+    "magic_index": 3,
+    "counts_schema": "cnot"
+   }
+  },
+  {
+   "parameters": {
+    "d": 9,
+    "code_type": "IStateCnot",
+    "d_color": 3,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 2,
+    "dstl_Zflag_selec": true,
+    "pz": 0.005,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:3115daac58abf72675acd2481076dd83e01d721fc09ff1ff2cb1daaa175227ae",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 27,
+    "num_observables": 4,
+    "num_errors": 85,
+    "watched_detectors": 3,
+    "num_checks": 3,
+    "magic_index": 3,
+    "counts_schema": "cnot"
+   }
+  },
+  {
+   "parameters": {
+    "d": 9,
+    "code_type": "IStateCnot",
+    "d_color": 3,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 9,
+    "dstl_Zflag_selec": true,
+    "pz": 0.005,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:65b2d51a553d95960d291bbf8ce4cc8837faa2fe755ef62f6d57ab9461339c1e",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 83,
+    "num_observables": 4,
+    "num_errors": 253,
+    "watched_detectors": 3,
+    "num_checks": 3,
+    "magic_index": 3,
+    "counts_schema": "cnot"
+   }
+  },
+  {
+   "parameters": {
+    "d": 9,
+    "code_type": "IStateCnot",
+    "d_color": 3,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 1,
+    "dstl_Zflag_selec": true,
+    "pz": 0.01,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:8bb33bc76978708c7637efbf0cfcf3d893e5c31cef54cb6247aeb34d6fc4ee23",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 19,
+    "num_observables": 4,
+    "num_errors": 61,
+    "watched_detectors": 3,
+    "num_checks": 3,
+    "magic_index": 3,
+    "counts_schema": "cnot"
+   }
+  },
+  {
+   "parameters": {
+    "d": 9,
+    "code_type": "IStateCnot",
+    "d_color": 3,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 2,
+    "dstl_Zflag_selec": true,
+    "pz": 0.01,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:5e6fbecbd03fde169bc72ee6040d4140e4a624f25ae3baca419be786a115d896",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 27,
+    "num_observables": 4,
+    "num_errors": 85,
+    "watched_detectors": 3,
+    "num_checks": 3,
+    "magic_index": 3,
+    "counts_schema": "cnot"
+   }
+  },
+  {
+   "parameters": {
+    "d": 9,
+    "code_type": "IStateCnot",
+    "d_color": 3,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 9,
+    "dstl_Zflag_selec": true,
+    "pz": 0.01,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:41f6fa56df07c561450b75bb73d8148566c6fe37ea9c2aa7c42d9405d3d4db22",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 83,
+    "num_observables": 4,
+    "num_errors": 253,
+    "watched_detectors": 3,
+    "num_checks": 3,
+    "magic_index": 3,
+    "counts_schema": "cnot"
+   }
+  }
+ ]
+}

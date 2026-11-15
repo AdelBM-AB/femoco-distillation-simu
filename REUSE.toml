@@ -1,0 +1,22 @@
+version = 1
+
+# Code: everything not matched below.
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 The femoco-distillation-simu authors"
+SPDX-License-Identifier = "MIT"
+
+# Data and figures.
+[[annotations]]
+path = [
+    "output/README.md",
+    "output/Results/**",
+    "output/figures/femoco_paper/circuits/**",
+    "output/figures/femoco_paper/*.pdf",
+    "output/figures/femoco_paper/*.tex",
+    "output/figures/femoco_paper/*.md",
+]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 The femoco-distillation-simu authors"
+SPDX-License-Identifier = "CC-BY-4.0"

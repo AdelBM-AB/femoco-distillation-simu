@@ -1,0 +1,48 @@
+[project]
+name = "femoco-distillation-simu"
+version = "1.0.0"
+description = "Simulation results and figures for |i>-state distillation on cat qubits (arXiv:2610.37840)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE", "LICENSES/*"]
+authors = [{ name = "Adel Ben Moussa" }]
+dependencies = [
+    "numpy",
+    "matplotlib>=3.9.2,<4",
+    # Reads the circuits in output/figures/femoco_paper/circuits; the version they were written with.
+    "stim==1.16.0",
+    "jupyter",
+]
+
+[build-system]
+requires = ["setuptools>=77.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [
+    "distillation_simu",
+    "distillation_simu.common",
+    "distillation_simu.core",
+    "distillation_simu.simu_lab",
+    "paramsweep",
+]
+
+# ---------------------------------------------------------------------------- pixi
+# `pixi run figures` installs everything (conda-forge Python, the dependencies above from PyPI,
+# this package editable) and re-runs the notebook. pip works just as well; see README.md.
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64", "win-64"]
+
+[tool.pixi.dependencies]
+# The interpreter the notebook's results were produced and last run with.
+python = "3.13.*"
+
+[tool.pixi.pypi-dependencies]
+femoco-distillation-simu = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+figures = "jupyter nbconvert --to notebook --execute --inplace output/figures/femoco_paper/femoco_figures.ipynb"
+lab = "jupyter lab output/figures/femoco_paper/femoco_figures.ipynb"

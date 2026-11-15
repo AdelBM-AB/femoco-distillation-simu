@@ -1,0 +1,50 @@
+{
+  "version": "4",
+  "experiment_types": [
+    {
+      "experiment_type": {
+        "code_type": "IStateCnot",
+        "mode": "cnot_dense_two_step_symmetric"
+      },
+      "version": "4",
+      "parameter_descriptions": {
+        "d": "Code distance of the repetition code outputting the magic state.",
+        "code_type": "QEC construction simulated, e.g. 'UnfoldedDistillation' (see CodeType).",
+        "d_color": "Distance of the 2D triangular colour code the repetition code is coupled to; odd and at least 3. Sets the distilled state's error probability -- 7p^3 at d_color=3, 36p^5 at d_color=5.",
+        "rep_bell_pair_stabs": "Which repetition-code stabilisers X_{r_j} X_{r_j+1} are measured by two entangled ancillas instead of one, as '1-3-5' (0-indexed; the ones coupled to the colour code are 0 .. d_color-2), or 'none'. One pair stretches the whole repetition code's period: 4 -> 6 (rep_pair_readout=two_step) or 5 (one_step).",
+        "rep_pair_readout": "How a repetition-code Bell pair is read out: 'two_step' (disentangle, MX the ancilla) or 'one_step' (MX both halves, the value their XOR). Only with rep_bell_pair_stabs set.",
+        "mode": "Mode of the distillation protocol, e.g. 'preselection' or 'modified' (see ProtocolModeType).",
+        "decoder": "Decoder used on the merged circuit, e.g. 'tesseract' or 'bposd' (see CustomDecoder).",
+        "num_checks": "Number of check observables that must all match for a shot to be accepted; null to take it from the code being simulated.",
+        "magic_index": "Index of the observable carrying the distilled magic state; null to take it from the code being simulated.",
+        "dstl_stabX_rounds": "Number of Stab_X rounds the colour code runs after its Stab_Z round, which is structurally required and collects the sigma the acceptance checks are predicted against. 0 is the Stab_Z round alone.",
+        "dstl_stabX_selec": "Number of trailing Stab_X rounds whose detectors must all come back clean for a shot to be kept, in [0, dstl_stabX_rounds]; 0 selects on none. Switched independently of dstl_Zflag_selec, so this window never drops the Bell flags. The output repetition code is never selected on: it is a memory to be corrected, not a distillation check.",
+        "dstl_stabX_after_coupling": "How many of the Stab_X rounds run after the transversal coupling and the X^{1/2} gate rather than before them, in [0, dstl_stabX_rounds]. 0 puts the coupling in the last colour cycle. Rounds after the coupling report on colour faults that can no longer reach the output, so they inform the decoder rather than protect -- and each costs the magic state the repetition-code cycles it takes.",
+        "rep_prep_cycles": "Number of complete repetition-code cycles run before the transversal CNOT; null to derive it, as every run before 2026-10-02 did -- 1 with no Stab_X round, as many as fit alongside the colour rounds otherwise. A count that does not fit delays the colour code. With 1, the record every boundary-row acceptance check xors in owns no detector, so a fault on it is indistinguishable from a colour X_F flip; more cycles give that record detectors on both sides.",
+        "dstl_Zflag_selec": "Measure the Stab_Z round's Bell-pair flags and discard a shot before decoding if any fired: the postselection protocol, whose failure rate is the paper's 7p^3 rather than the decoder-limited p^ceil(d_color/2). False does not measure the flags at all -- the circuit every run before 2026-09-17 built, at half the circuit distance. Must be false on a shape without a flag (cnot_dense_one_step).",
+        "pz": "Physical Z-error rate for the circuit-level noise.",
+        "noiseless_merge": "Remove every circuit noise location touching the merge cat block and its parity ancillas, whatever gate produced it; false for the real noise model.",
+        "shots_per_task": "Shots collected per sinter task (its max_shots).",
+        "nb_jobs": "Number of independent repetitions per sweep point, one result file each; their counts are pooled when computing statistics.",
+        "max_batch_size": "Largest batch of shots a sinter worker takes at once; trades peak RAM against overhead, and does not affect the statistics.",
+        "max_batch_seconds": "How long a sinter worker aims to spend per batch; runtime only, does not affect the statistics.",
+        "job": "Repetition index of a single result file, in range(nb_jobs)."
+      },
+      "fixed_parameters": {
+        "d": 13,
+        "d_color": 5,
+        "dstl_stabX_after_coupling": 0,
+        "dstl_stabX_rounds": 0,
+        "dstl_stabX_selec": 0,
+        "magic_index": null,
+        "max_batch_seconds": 5,
+        "max_batch_size": 1000000,
+        "num_checks": null
+      },
+      "sweep_file_structure": {
+        "dir_template": "code_type={code_type}/mode={mode}/rep_bell_pair_stabs={rep_bell_pair_stabs}/rep_pair_readout={rep_pair_readout}/pz={pz}/nb_jobs={nb_jobs}/shots_per_task={shots_per_task}/decoder={decoder}/noiseless_merge={noiseless_merge}/dstl_Zflag_selec={dstl_Zflag_selec}/rep_prep_cycles={rep_prep_cycles}",
+        "file_template": "result_job={job}.json"
+      }
+    }
+  ]
+}

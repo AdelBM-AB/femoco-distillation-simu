@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use these results or this code, please cite the paper below."
+title: "femoco-distillation-simu: simulation results for |i⟩-state distillation on cat qubits"
+type: software
+authors:
+  - given-names: Adel
+    family-names: Ben Moussa
+license: MIT
+keywords:
+  - magic state distillation
+  - cat qubits
+  - quantum error correction
+preferred-citation:
+  type: article
+  title: "Ground-state energy estimation compiled on cat qubits: 7 164 qubits for FeMoco-54 in 23.5 hours"
+  authors:
+    - given-names: Larissa
+      family-names: Kroell
+    - given-names: Hugo
+      family-names: Jacinto
+    - given-names: Victor
+      family-names: Hertz
+    - given-names: Axel
+      family-names: Pappalardo
+    - given-names: Adel
+      family-names: Ben Moussa
+    - given-names: Manuel
+      family-names: Rispler
+    - given-names: Peter
+      family-names: Shanahan
+    - given-names: Élie
+      family-names: Gouzien
+    - given-names: Christophe
+      family-names: Vuillot
+    - given-names: Vivien
+      family-names: Londe
+  year: 2026
+  doi: 10.48550/arXiv.2610.37840
+  url: "https://arxiv.org/abs/2610.37840"
+  identifiers:
+    - type: other
+      value: "arXiv:2610.37840"
+      description: arXiv identifier

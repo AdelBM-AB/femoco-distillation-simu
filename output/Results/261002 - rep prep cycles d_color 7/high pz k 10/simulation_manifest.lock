@@ -1,0 +1,112 @@
+{
+ "version": "1",
+ "environment": {
+  "code_commit": "92afe85",
+  "code_dirty": null,
+  "python": "unknown",
+  "packages": {
+   "stim": "1.16.0",
+   "sinter": "1.16.0",
+   "tesseract-decoder": "0.1.1.dev20260822020007",
+   "stimbposd": "0.2.0",
+   "ldpc": "unknown (unpinned)",
+   "frontier": null
+  },
+  "lock_param_provenance": "reconstructed 2026-11-13 from git: 92afe85 (exact (README); resumed at a169eb4); ray run; reproducibility: rebuilt at that commit, fingerprints equal to today's"
+ },
+ "points": [
+  {
+   "parameters": {
+    "d": 19,
+    "code_type": "IStateCnot",
+    "d_color": 7,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 10,
+    "dstl_Zflag_selec": true,
+    "pz": 0.005,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:5525cc9c5086ad03fe50a4e5a8f6f805c7995b9bc8f625d47dde763f119bd2b5",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 216,
+    "num_observables": 19,
+    "num_errors": 709,
+    "watched_detectors": 18,
+    "num_checks": 18,
+    "magic_index": 18,
+    "counts_schema": "cnot"
+   }
+  },
+  {
+   "parameters": {
+    "d": 19,
+    "code_type": "IStateCnot",
+    "d_color": 7,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 10,
+    "dstl_Zflag_selec": true,
+    "pz": 0.0075,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:4eece9d6ed2a8616e4d909cc71128edafca5437a0b58973fcdac0d3db9a5b5c6",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 216,
+    "num_observables": 19,
+    "num_errors": 709,
+    "watched_detectors": 18,
+    "num_checks": 18,
+    "magic_index": 18,
+    "counts_schema": "cnot"
+   }
+  },
+  {
+   "parameters": {
+    "d": 19,
+    "code_type": "IStateCnot",
+    "d_color": 7,
+    "rep_bell_pair_stabs": "none",
+    "rep_pair_readout": "two_step",
+    "mode": "cnot_dense_two_step_symmetric",
+    "decoder": "tesseract",
+    "num_checks": null,
+    "magic_index": null,
+    "dstl_stabX_rounds": 0,
+    "dstl_stabX_selec": 0,
+    "dstl_stabX_after_coupling": 0,
+    "rep_prep_cycles": 10,
+    "dstl_Zflag_selec": true,
+    "pz": 0.01,
+    "noiseless_merge": false
+   },
+   "fingerprint": "sha256:18dded8c8de06ad3f782a0cb59a18430ed1c5814d40f6be05cdeb7bf4466f6a5",
+   "pins": {
+    "decoder": "tesseract",
+    "num_detectors": 216,
+    "num_observables": 19,
+    "num_errors": 709,
+    "watched_detectors": 18,
+    "num_checks": 18,
+    "magic_index": 18,
+    "counts_schema": "cnot"
+   }
+  }
+ ]
+}
